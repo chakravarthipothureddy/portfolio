@@ -30,11 +30,11 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("### 📞 Contact Info")
     st.markdown("""
-    - ✉ *Email:* [chakravarthy.pothureddy@gmail.com](mailto:chakravarthy.pothureddy@gmail.com)
-    - 📱 *Phone:* ‪+91 6302867927‬
-    - 🩸 *Blood Group:* A+
-    - :globe_with_meridians: *Languages Known:* Telugu, English
-    - 📍 *Adress:* Vegeswarapuram, Tallapudi, Andhra Pradesh
+    - ✉️ **Email:** [chakravarthy.pothureddy@gmail.com](mailto:chakravarthy.pothureddy@gmail.com)
+    - 📱 **Phone:** +91 6302867927
+    - 🩸 **Blood Group:** A+
+    - :globe_with_meridians: **Languages Known:** Telugu, English
+    - 📍 **Adress:** Vegeswarapuram, Tallapudi, Andhra Pradesh
     """)
     
 
@@ -85,7 +85,7 @@ With hands-on experience in Python, data analysis, and visualization tools, I'm 
 
 
 with about_me_tab:
-    st.header("🙋‍♂ About Me")
+    st.header("🙋‍♂️ About Me")
     st.write("Hello! I’m Naga Sairam Srinivasa Chakravarthi Pothureddy, a detail-oriented and highly motivated Data Science professional with a passion for transforming raw data into actionable insights. My fascination with predictive analytics and machine learning drives me to solve complex problems and deliver data-driven solutions.")
     st.write("I possess a strong foundation in Python (NumPy, Pandas, Scikit-learn), SQL, and Power BI, along with expertise in machine learning, statistical modeling, and data visualization. My problem-solving skills and collaborative mindset enable me to contribute effectively to data-centric projects.")
     st.write("I hold a B.Tech in Electrical and Electronics Engineering from BVC Engineering College and further honed my skills through a Post Graduate Program in Computational Data Science from INSOFE and Case Western Reserve University. Additionally, I’ve earned certifications in Power BI and Python, strengthening my analytical and technical capabilities.")
@@ -105,13 +105,13 @@ with education_tab:
         
     with col2:
         # Education Entry 1
-        with st.expander("*Post Graduate Program in Computational Data Science*", expanded=True):
+        with st.expander("**Post Graduate Program in Computational Data Science**", expanded=True):
             st.markdown("""
-            - 🏛*Institute:* INSOFE & Case Western Reserve University
-            - 📅*Duration:* 2022 - 2023
-            - *Key Subjects:* Machine Learning, Data Analytics, Data Science, Statistical Modeling
-            - *GPA:* 3.8/4.0""")
-            with open("5129_PothureddyNSairamSrinivasaChakravarthi_PGP - Copy.pdf", "rb") as pdf_file:
+            - 🏛️**Institute:** INSOFE & Case Western Reserve University
+            - 📅**Duration:** 2022 - 2023
+            - **Key Subjects:** Machine Learning, Data Analytics, Data Science, Statistical Modeling
+            - **GPA:** 3.8/4.0""")
+            with open("5129_PothureddyNSairamSrinivasaChakravarthi_PGP.pdf", "rb") as pdf_file:
                 PDFbyte = pdf_file.read()
 
             st.download_button(label="📄 Download Certificate", 
@@ -120,12 +120,12 @@ with education_tab:
                     mime='application/octet-stream')
                
         # Education Entry 2
-        with st.expander("*B.Tech in Electrical and Electronics Engineering*", expanded=True):
+        with st.expander("**B.Tech in Electrical and Electronics Engineering**", expanded=True):
             st.markdown("""
-            - 🏛*Institute:* BVC Engineering College 🏫Affiliated by JNTUK University
-            - 📅*Duration:* 2018 - 2022
-            - *Key Subjects:* Python, SQL, Power Systems, Control Systems
-            - *GPA:* 6.5/10
+            - 🏛️**Institute:** BVC Engineering College 🏫Affiliated by JNTUK University
+            - 📅**Duration:** 2018 - 2022
+            - **Key Subjects:** Python, SQL, Power Systems, Control Systems
+            - **GPA:** 6.5/10
             """)
     
     st.markdown("---")
@@ -171,7 +171,7 @@ with internships_tab:
     st.write("• To Learn Clean the data from various Languages and Tools like Python, SQL, and Power BI.")
 
 with skills_tab:
-    st.markdown("### 🛠 Skills")
+    st.markdown("### 🛠️ Skills")
     skills = {
         "Languages": "Python, SQL, HTML, CSS, C#(basic)",
         "Data Analysis": "Data Cleaning, Data Preprocessing, Exploratery Data Analysis, Text Mining",
@@ -184,22 +184,22 @@ with skills_tab:
         "Soft Skills": "Problem Solving, Communication Skills"
     }
     for category, tools in skills.items():
-        st.markdown(f"- *{category}:* {tools}")
+        st.markdown(f"- **{category}:** {tools}")
 
 with projects_tab:
     st.header("Projects")
-    st.subheader("🔍Predict 🛡Fraud Detection in Auto Insurance Claims")
+    st.subheader("🔍Predict 🛡️Fraud Detection in Auto Insurance Claims")
     st.write("• Developed a predictive model using logistic regression to identify fraudulent auto insurance claims from a real-world dataset. ")
     st.write("• The project encompassed comprehensive data preprocessing, including null value handling, redundant column removal, missing value imputation, dummy variable creation, and data scaling.")
     st.write("• The dataset was split into 70% training and 30% testing sets.")
     st.write("• Model performance was rigorously evaluated using a confusion matrix, achieving impressive F1-scores of 0.92 and 0.89 on the training and testing datasets, respectively, demonstrating a robust and accurate fraud detection capability.")
-    st.write("🐙 GitHub: [Project](https://github.com/chakravarthipothureddy/insurance-fraudster-capstone-project.git)")
+    st.write("🐙 GitHub: [View_Project](https://github.com/chakravarthipothureddy/insurance-fraudster-capstone-project.git)")
 
     st.subheader("📊 HR Attrition Analysis and Visualization (Microsoft Power BI)")
     st.write("- Conducted a comprehensive analysis of HR attrition data using Microsoft Power BI to identify key drivers and trends. ")
     st.write("- The project involved connecting to diverse data sources, transforming and cleaning the data to ensure compatibility with Power BI, and creating custom measures and calculated columns.")
     st.write("- Interactive visualizations, including attrition rate by department, employee distribution by age group, attrition rate by gender, and job satisfaction levels, were developed and compiled into a dynamic dashboard to provide actionable insights into employee attrition patterns.")
-    st.write("🐙 GitHub: [Project](https://github.com/chakravarthipothureddy/power_BI_HRdata)")
+    st.write("🐙 GitHub: [View_Project](https://github.com/chakravarthipothureddy/power_BI_HRdata)")
 
 with certificates_tab:
     certifications = [
@@ -213,7 +213,7 @@ with certificates_tab:
         "title": "Post Graduate Program in Computational Data Science",
         "issuer": "INSOFE & Case Western Reserve University",
         "date": "2023-May",
-        "credential_link": "5129_PothureddyNSairamSrinivasaChakravarthi_PGP - Copy.pdf",
+        "credential_link": "5129_PothureddyNSairamSrinivasaChakravarthi_PGP.pdf",
     },
     {
         "title": "Python",
@@ -232,10 +232,10 @@ with certificates_tab:
     st.header("📜 My Certifications")
     
     for cert in certifications:
-        st.subheader(f"🎖 {cert['title']}")
-        st.write(f"🏛 *Issuer:* {cert['issuer']}")
-        st.write(f"📅 *Date:* {cert['date']}")
-        st.write(f"🔗 [View Credential]({cert['credential_link']})")
+        st.subheader(f"🎖️ {cert['title']}")
+        st.write(f"🏛️ **Issuer:** {cert['issuer']}")
+        st.write(f"📅 **Date:** {cert['date']}")
+        st.write(f"🔗 [View Certificate]({cert['credential_link']})")
         st.markdown("---")
 
     st.markdown("### 🚀 Career Goals")
@@ -270,13 +270,13 @@ with contact_tab:
         st.markdown('<div class="contact-card">', unsafe_allow_html=True)
         st.subheader("📌 Direct Contact")
         st.markdown("""
-        *📍 Location:*  
+        **📍 Location:**  
         Hyderabad, India  
     
-        *✉ Email:*  
+        **✉️ Email:**  
         [chakravarthy.pothureddy@gmail.com](mailto:chakravarthy.pothureddy@gmail.com)  
     
-        *📱 Phone:*  
+        **📱 Phone:**  
         +91 6302867927  
         """)
         st.markdown('</div>', unsafe_allow_html=True)
@@ -285,10 +285,10 @@ with contact_tab:
         st.markdown('<div class="contact-card">', unsafe_allow_html=True)
         st.subheader("🌐 Social Connect")
         st.markdown("""
-        *🔗 LinkedIn:*  
+        **🔗 LinkedIn:**  
         [Pothureddy Naga Sairam](https://linkedin.com/in/chakravarthipothureddy)  
     
-        *💻 GitHub:*  
+        **💻 GitHub:**  
         [GitHub](https://github.com/chakravarthipothureddy)  
         """)
         st.markdown('</div>', unsafe_allow_html=True)
@@ -296,7 +296,7 @@ with contact_tab:
     with col2:
         # --- Contact Form ---
         with st.form("contact_form", border=True):
-            st.subheader("✍ Send a Message")
+            st.subheader("✍️ Send a Message")
             name = st.text_input("Your Name*", placeholder="John Doe")
             email = st.text_input("Your Email*", placeholder="your.email@example.com")
             subject = st.selectbox("Subject", 
@@ -332,4 +332,4 @@ with contact_tab:
 # --- Footer ---
     st.markdown("---")
     st.caption("© 2025 | @PNSRSC | All Rights Reserved")
-            # (Optional: Add email forwarding logic here)
+            # (Optional: Add email forwarding logic here)
