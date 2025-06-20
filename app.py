@@ -1,5 +1,4 @@
 import streamlit as st
- 
 
 st.set_page_config(
     page_title="Data Scientist Portfolio | Chakravarthi",
@@ -8,19 +7,6 @@ st.set_page_config(
 )
 
 
-
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #ADD8E6;
-        color: #333333;
-        font-family: Georgia, serif;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
 
 with st.sidebar:
     # Profile image (replace with your own)
@@ -194,87 +180,109 @@ with internships_tab:
 with skills_tab:
     st.markdown("### 🛠 Skills")
    
-    col1, col2, col3 = st.columns([3, 2, 2])
+    col1, col2, col3 = st.columns([3, 3, 3])
  
     with col1:
         st.markdown("#### 🤖 Machine Learning")
 
  
         #
-        with st.expander("*Supervised Learning*", expanded=True):
-                st.subheader('Classification :')
-                st.markdown("""
-            - Logistic Regression, Naive Bayes
-            - Decission Tree Classifier, Randomforest Classifier
-            - Ensembling Techniques(Bagging, Boosting)
-            - SVM Classifier
-            """)
-                st.subheader('Regression :')
-                st.markdown("""
-            - Linear Regression, Polynomial Regression
-            - Decission Tree Regressor, Randomforest Regressor
-            - Ensembling Techniques(Bagging, Boosting)
-            - SVM Regressor
-            """)
-        with st.expander("*Un Supervised Learning*", expanded=True):
-                st.markdown("""
-            - K-Means Clustering
-            - Hierarical Clustering
-            - PCA
-            """)
-        with st.expander("*🧠 Deep Learning*", expanded=True):
-                st.markdown("""
-            - Artificial Neural Networks
-            """)
- 
+        with st.expander("**Supervised Learning**"):
+
+
+            st.subheader('🧠 Classification ')
+            st.markdown("📊 Logistic Regression")
+            st.markdown('🧮 Naive Bayes')  
+            st.markdown('🌲 Decision Tree Classifier') 
+            st.markdown('📐 SVM Classifier')  
+
+            st.subheader('📈 Regression ')
+            st.markdown("📉 Linear Regression")
+            st.markdown('🧮 Polynomial Regression') 
+            st.markdown('🌲 Decision Tree Regressor')
+            st.markdown(' 📐 SVM Regressor')
+
+            st.markdown('### 🧱 Ensembling Techniques')
+            st.markdown('🌳 Random Forest')
+            st.markdown('👜 Bagging')
+            st.markdown('🚀 Boosting')
+
+        with st.expander("**🧩 Unsupervised Learning**"):
+            st.markdown("🔵 K-Means Clustering")
+            st.markdown("🧬 Hierarchical Clustering")
+            st.markdown("📊 Principal Component Analysis (PCA)")
+
+        with st.expander("**🧠 Deep Learning**"):
+            st.markdown("🧠 Artificial Neural Networks (ANNs)")
+
+        with st.expander("**🔍 Data Analysis**"):
+            st.markdown("📊 **Exploratory Data Analysis (EDA)**")
+            st.markdown("🧹 **Data Preprocessing**")
+            st.markdown("🧼 **Data Cleaning**")
+            st.markdown("🧠 **Feature Engineering**")
+            st.markdown("📈 **Model Evaluation (metrics & plots)**")
+
+
     with col2:
-        st.markdown("##### Programming Launguages & Libraries")
+        st.markdown("#### Laungauges")
 
 
-        with st.expander("*Languages*", expanded=True):
-            st.markdown('#### Languages')
-            st.write("""
-        - Python,
-        - C#
-        - HTML & CSS
-        - Java Fundementals             
-        """)
+        with st.expander("**💻 Programming Languages**"):
+            st.markdown("""  
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="30"/> Python  
+        <br><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="30"/> Java(Basics)  
+        <br><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="30"/> C#
+        """, unsafe_allow_html=True)
 
-        with st.expander("*Libraries*", expanded=True):
-            st.markdown("#####  Libraries")
-            st.write("""
-        - Pandas, NumPy  
-        - Matplotlib, Seaborn  
-        - Scikit-learn, Keras, Tenserflow
-        - NLTK, Spacy, CV2
-        - Missingno
-        """)
+
+
+        with st.expander("**Libraries**"):
+             st.markdown(""" 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="30"/> Pandas,
+        <br><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="30"/> NumPy 
+        <br><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" width="30"/> matplotlib
+        <br><img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width="30"/> Scikit-learn, 
+        <br><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" width="30"/> Keras, 
+        <img src="https://opencv.org/wp-content/uploads/2020/07/OpenCV_logo_black-2.png" width="30"/> Cv2  
+        <br><img src="https://tse1.mm.bing.net/th?id=OIP.8XOPuKa7eNawGFCuH0uK0AHaID&pid=Api&rs=1&c=1&qlt=95&w=100&h=109" width="30"/> Nltk,
+        <img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" width="30"/> seaborn 
+        <br><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="15"/> TensorFlow  
+    """, unsafe_allow_html=True)
+             
+        with st.expander("**🌐 Web & Database**"):
+            st.markdown("""  
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="30"/> HTML 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" width="30"/> CSS  
+        <br><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="30"/> MySQL  
+        <br><img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.svg" width="30"/> Streamlit  
+        <br><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg" width="30"/> Flask  
+        """, unsafe_allow_html=True)
+
+
+        
  
     with col3:
-        st.markdown("##### 🛠️Tools")
-        with st.expander("*📊 Visualization Tools*", expanded=True):
-            st.markdown("#### 📊 Business Intelligence Tools")
-            st.write("""
-        - Power BI  
-        - Tableau(Basics)
-        - Excel
-        """)
-        with st.expander("*☁ Cloud Tools*", expanded=True):
-            st.write('''
-            - Azure(Basics) ''')
+        st.markdown("### 🛠️Tools")
+        with st.expander("**📊 Business Intelligence Tools**"):
+             st.markdown(""" 
+            <br><img src="https://tse1.mm.bing.net/th?id=OIP.Oxo-u9GMK3zbEM5h-FiVnQHaEK&pid=Api&rs=1&c=1&qlt=95&w=184&h=103" width="30"/> PowerBI
+            <br><img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png" width="40"/> Tableau
+            <br><img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg" width="20"/> Excel
+        """, unsafe_allow_html=True)
+             
+        with st.expander("**☁ Cloud Tools**"):
+            st.markdown(""" 
+            <br><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg" width="50"/> Azure(Basics)
+            """, unsafe_allow_html=True)
 
-        with st.expander("*Tools*", expanded=True):
-            st.markdown("#### 🧰 Tools & Frameworks")
-            st.write("""
-        - Streamlit
-        - Git & GitHub  
-        - VS Code  
-        - Flask (for web apps)
-        - Google Colab
-        - Jupyter Notebooks
-        - Spyder
-        """)
- 
+        with st.expander("**Frame Works**"):
+            st.markdown(""" 
+            <br><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="30"/> Git  
+            <br><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="30"/> GitHub  
+            <br><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="30"/> VS Code
+            <br><img src="https://tse1.mm.bing.net/th?id=OIP.H_lDvyyXkP-zBdDipHs1QwAAAA&pid=Api&P=0&h=180" width="30"/> Google Colab
+            <br><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" width="30"/> Jupyter Notebook
+        """, unsafe_allow_html=True)
 
 with projects_tab:
     st.header("Projects")
